@@ -3,7 +3,7 @@ class SongsController < ApplicationController
     @songs = Song.all
 
     respond_to do |f|
-      f.html { render :show }
+      f.html { render :index }
       f.json { render json: @songs }
     end
   end
